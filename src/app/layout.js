@@ -1,4 +1,5 @@
 import "./globals.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from "@/components/layout/header";
 
 import { DM_Sans } from 'next/font/google';

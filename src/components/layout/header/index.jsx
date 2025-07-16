@@ -2,7 +2,8 @@ import styles from './header.module.scss';
 
 const Header = () => {
     return (
-        <nav className={styles.header}>Unlock potential, go further</nav>
+        <nav className={`${styles.header}`}>
+        </nav>
     );
 };
 
