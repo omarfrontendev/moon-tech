@@ -1,0 +1,22 @@
+.Workout_btn {
+    margin-top: 86px;
+}
+.plus {
+    background-color: #ebff00;
+    width: 40px;
+    height: 108px;
+    position: absolute;
+    transform: translateX(-109px);
+    top: 251px;
+    left: -35px;
+    transform: rotate(45deg);
+
+    &::after {
+        content: "";
+        position: absolute;
+        background-color: $color-accent;
+        width: 40px;
+        height: 108px;
+        transform: rotate(90deg);
+    }
+}

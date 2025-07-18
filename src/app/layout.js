@@ -1,8 +1,9 @@
-import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "../styles/globals.scss";
 import Header from "@/components/layout/header";
 
 import { DM_Sans } from 'next/font/google';
+import Footer from '@/components/layout/footer';
 
 const dmSans = DM_Sans({
   variable: '--font-dm-sans',
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
       <body className={dmSans.variable}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

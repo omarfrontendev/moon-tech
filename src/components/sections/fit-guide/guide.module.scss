@@ -1,0 +1,81 @@
+.section {
+    border: 1px solid #FFFFFF3D;
+    padding: 85px 0;
+    border-radius: $border-radius_80;
+
+    @media(max-width: 678px) {
+        height: 727px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .shapes {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        @media(max-width: 678px) {
+            flex-direction: column;
+            gap: 60px;
+            left: 0;
+            top: 0;
+            transform: translate(0);
+        }
+
+        .semicircle {
+            width: 308px;
+            height: 154px;
+            position: relative;
+            overflow: hidden;
+            border-bottom-right-radius: 154px;
+            border-bottom-left-radius: 154px;
+            transform: rotate(-45deg) translateY(64px);
+            background-color: $color-background-primary-dark;
+
+            @media(max-width: 678px) {
+                width: 196px;
+                height: 98px;
+                border-bottom-right-radius: 98px;
+                border-bottom-left-radius: 98px;
+            }
+        }
+
+        .square {
+            background-color: $color-background-primary-dark;
+            width: 210px;
+            height: 210px;
+            transform: rotate(45deg);
+
+            @media(max-width: 678px) {
+                width: 133px;
+                height: 133px;
+            }
+        }
+
+        .plus {
+            background-color: $color-background-primary-dark;
+            width: 298px;
+            height: 76px;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                content: "";
+                background-color: $color-background-primary-dark;
+                width: 75px;
+                height: 295px;
+            }
+        }
+    }
+}

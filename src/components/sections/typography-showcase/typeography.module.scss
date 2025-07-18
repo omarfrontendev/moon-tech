@@ -1,0 +1,45 @@
+.section {
+    border: 1px solid $border-color;
+    border-radius: $border-radius_80;
+    padding-top: 223px;
+    position: relative;
+
+    .headline_box {
+        background-color: $color-accent;
+        border-radius: $border-radius_80;
+        padding: 107px 112px 40px 82px;
+        transform: translateY(100px);
+
+        .headline_title {
+            color: $color-black;
+            font-size: 313px;
+            font-weight: 900;
+            letter-spacing: -12.52px;
+        }
+    }
+
+    .hubot_sans {
+        background-color: $color-primary;
+        padding: 166px 0 66px;
+        border-radius: 0 0 $border-radius_70 $border-radius_70;
+        // transform: translateY(-100px);
+        z-index: -1;
+        position: relative;
+
+        .hubot_text {
+            color: $color-white;
+            margin-left: 37px;
+            max-width: 550px;
+            font-size: 20px;
+            font-weight: 400;
+            margin-bottom: 0;
+
+        }
+    }
+
+    .section_image {
+        position: absolute;
+        bottom: -107px;
+        right: 90px;
+    }
+}

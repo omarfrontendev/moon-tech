@@ -1,0 +1,25 @@
+.footer {
+    background-color: #0F1112;
+    border: 1px solid $border-color;
+    border-radius: $border-radius_80;
+    padding: 84px 40px;
+
+    .text {
+        font-size: 20px;
+        font-weight: 400;
+        color: #FFFFFF80;
+    }
+
+    .title {
+        font-size: 54px;
+        font-weight: 700;
+        margin: 23px 0;
+    }
+
+    .link {
+        color: $color-accent;
+        font-size: 24px;
+        font-weight: 400;
+        text-decoration: underline;
+    }
+}
