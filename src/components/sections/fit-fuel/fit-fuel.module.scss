@@ -12,10 +12,12 @@
 
     @media(max-width: 767px) {
         border-radius: 30px;
-        padding: 12px;
+        // padding: 12px;
+        padding: 0;
 
         .title {
             width: 100%;
+            padding: 12px;
         }
 
         .bolt_icon {

@@ -8,9 +8,10 @@
     .image_box {
         position: relative;
         margin-top: 82px;
+        padding-bottom: 54px;
 
         @media(max-width: 678px) {
-            padding: 0 16px 5px;
+            padding: 0 16px 15px;
         }
 
         &::after {
