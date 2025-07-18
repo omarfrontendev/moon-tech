@@ -47,36 +47,30 @@ img {
   max-width: 100%;
 }
 
-.main_container {
-  width: 100%;
-  padding: 0 $x_80_spaces;
-}
-.margin-top-80 {
-  margin-top: 80px;
+p {
+  margin-bottom: 0;
 }
 
-.margin-bottom-32 {
-  margin-bottom: 32px;
+.main_container {
+  width: 100%;
+  padding: 0 64px;
 }
 
 .padding-left-64 {
   padding-left: 64px;
 }
 
-.box {
-  background-color: #0072bb;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  border-radius: 8px;
-}
-
-@media(max-width: 768px) {
+@media(max-width: 767px) {
   body {
     padding: 16px 8px 12px;
   }
+  
   .main_container {
     padding: 0 8px;
+  }
+
+  .padding-left-64 {
+    padding-left: 8px;
   }
 }
 

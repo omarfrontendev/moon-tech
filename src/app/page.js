@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div >
       <Hero />
-      <div className="d-flex flex-column gap-3 margin-top-80">
+      <div className="d-flex flex-column gap-3">
         <GetYourFit />
         <FitGuide />
         <Workout />

@@ -11,13 +11,12 @@ const Tracking = () => (
             title="Tracking & Progress"
             subtitle="Nourish your body, push your limits, and build a stronger, healthier you -<br /> one workout and meal at a time"
         />
-        <div className={`${styles.image} margin-top-80`}>
+        <div className={`${styles.image_box} main_container margin-top-80`}>
             <Image
                 src="/assets/tracking.svg"
                 alt="image"
-                width={1408}
-                height={904}
-                style={{ width: "100%", maxWidth: "auto" }}
+                width={1305}
+                height={850}
                 priority
             />
         </div>

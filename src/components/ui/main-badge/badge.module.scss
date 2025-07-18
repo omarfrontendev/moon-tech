@@ -11,10 +11,12 @@
     border-radius: $border-radius_70;
     height: 80px;
     width: fit-content;
+    white-space: nowrap;
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         font-size: 19.2px;
         gap: 8px;
         height: 64px;
+        padding: 0 32px;
     }
 }

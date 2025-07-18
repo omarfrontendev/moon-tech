@@ -12,7 +12,7 @@ const AchievementCard = ({ count, label, src, className = "" }) => {
           <span className={styles.count}>{count}</span>
           <p className={styles.count_label}>{label}</p>
         </div>
-        {hasImage && <img src={src} alt="image" />}
+        {hasImage && <img className={styles.count_image} src={src} alt="image" />}
       </div>
     );
   }

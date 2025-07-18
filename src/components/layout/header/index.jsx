@@ -9,10 +9,11 @@ const Header = () => {
                 <Image
                     src="/assets/logo.svg"
                     alt="logo"
-                    className={styles.logo}
-                    width={182}
-                    height={48}
+                    width={0}
+                    height={0}
                     priority
+                    sizes="(max-width: 767px) 120px, 182px"
+                    className={styles.logo}
                 />
                 <button className={`${styles.header_btn} d-flex align-items-center`}><Bolt /> Get it now</button>
             </div>

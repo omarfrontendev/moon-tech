@@ -21,10 +21,12 @@ const Hero = () => (
                 <div className={`${styles.hero_img}`}>
                     <Image
                         src="/assets/hero-img.svg"
-                        alt="hero_image"
-                        width={494}
-                        height={683}
+                        alt="Landing Hero"
+                        height={0}
+                        width={0}
                         priority
+                        sizes="auto"
+                        style={{ width: "fit-content", height: "auto" }}
                     />
                 </div>
             </div>

@@ -1,17 +1,21 @@
+'use client';
+
 import SectionTitle from "@/components/ui/section-title";
 import MainButton from "@/components/ui/main-badge";
 import { ScenarioIcon } from "@/icons";
 import Image from "next/image";
 import styles from './fit.module.scss';
-import { useMediaQuery } from "react-responsive";
+import useIsMobile from "@/hooks/useIsMobile";
 
 const GetYourFit = () => {
 
-    const isMobile = useMediaQuery({ maxWidth: 768 });
+    const isMobile = useIsMobile();
+
+    if (isMobile === null) return null;
 
     return (
         <section className="mb-3">
-            <div className={`${styles.section} main_container mb-5 d-flex flex-column flex-md-row gap-4 justify-content-between`}>
+            <div className={`${styles.section} main_container mb-5 d-flex flex-column flex-md-row gap-5 justify-content-between`}>
                 <SectionTitle
                     titleStyles={{ fontSize: isMobile ? "56px" : "" }}
                     subtitleStyles={{ fontSize: isMobile ? "16px" : "" }}
