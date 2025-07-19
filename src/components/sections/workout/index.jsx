@@ -7,6 +7,7 @@ import useIsMobile from "@/hooks/useIsMobile";
 
 const Workout = () => {
 
+    const isTablet = useIsMobile(991);
     const isMobile = useIsMobile();
 
     if (isMobile === null) return null;
@@ -15,8 +16,8 @@ const Workout = () => {
         <section className={`d-flex gap-5 flex-column flex-md-row align-items-start align-items-md-center justify-content-between`}>
             <div className="padding-left-64">
                 <SectionTitle
-                    titleStyles={{ fontSize: isMobile ? "56px" : "84px" }}
-                    subtitleStyles={{ fontSize: isMobile ? "14px" : "20px" }}
+                    titleStyles={{ fontSize: isMobile ? "56px" : isTablet ? "64px" : "84px" }}
+                    subtitleStyles={{ fontSize: isMobile ? "14px" : isTablet ? "16px" : "20px" }}
                     title="workout<br />spaces"
                     subtitle="Select a diet , set goals , and plan<br />workout days"
                 />
@@ -27,7 +28,7 @@ const Workout = () => {
                 </div>
             </div>
             <div className="w-100 w-md-auto w-md-auto d-flex justify-content-center justify-content-md-end">
-                <div className="position-relative">
+                <div className={`${styles.image_box} position-relative`}>
                     <div className={styles.plus}></div>
                     <Image
                         className={styles.image}

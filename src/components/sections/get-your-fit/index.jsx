@@ -9,16 +9,17 @@ import useIsMobile from "@/hooks/useIsMobile";
 
 const GetYourFit = () => {
 
+    const isTablet = useIsMobile(991);
     const isMobile = useIsMobile();
 
     if (isMobile === null) return null;
 
     return (
-        <section className="mb-3">
+        <section>
             <div className={`${styles.section} main_container mb-5 d-flex flex-column flex-md-row gap-5 justify-content-between`}>
                 <SectionTitle
-                    titleStyles={{ fontSize: isMobile ? "56px" : "" }}
-                    subtitleStyles={{ fontSize: isMobile ? "16px" : "" }}
+                    titleStyles={{ fontSize: isMobile ? "56px" : isTablet ? "62px" : "" }}
+                    subtitleStyles={{ fontSize: isMobile ? "16px" : isTablet ? "20px" : "" }}
                     title="Get your fit"
                     subtitle="Select a diet , set goals , and plan <br/> workout days"
                 />

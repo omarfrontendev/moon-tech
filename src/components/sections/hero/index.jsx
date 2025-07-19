@@ -5,7 +5,7 @@ import TagsBar from './tagsBar';
 const Hero = () => (
     <>
         <section className={`${styles.hero_section} d-flex align-items-center`}>
-            <div className={`${styles.hero_content} position-relative d-flex align-items-center justify-content-between`}>
+            <div className={`${styles.hero_content} position-relative gap-0 gap-md-5 d-flex align-items-center justify-content-between`}>
                 <p className={styles.hero_text}>Unlock potential, go further</p>
                 <h1 className={styles.hero_title}>
                     <Image

@@ -1,4 +1,5 @@
 import styles from './palette.module.scss';
+import PeletteCard from './pelette-card';
 
 const PaletteList = () => {
 
@@ -25,12 +26,9 @@ const PaletteList = () => {
         },
     ]
 
-    return <div className={`${styles.list} d-flex`}>
+    return <div className={`${styles.list} d-flex justify-content-end`}>
         {list.map(color => (
-            <div key={color.code} className={styles.color_card} style={{ backgroundColor: `${color.bgColor}` }} >
-                <p className={styles.color_label}>{color.label}</p>
-                <p className={styles.color_code}>{color.code}</p>
-            </div>
+            <PeletteCard key={color.code} {...color} />
         ))}
     </div>
 };

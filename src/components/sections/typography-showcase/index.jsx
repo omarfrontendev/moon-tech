@@ -3,6 +3,8 @@ import { Bolt, FontIcon } from "@/icons";
 import MainButton from "@/components/ui/main-badge";
 import styles from './typeography.module.scss';
 import useIsMobile from "@/hooks/useIsMobile";
+import HeadingBox from "./heading-box";
+import HubotSansBox from "./hubot-sans-box";
 
 const TypographyShowcase = () => {
 
@@ -29,22 +31,8 @@ const TypographyShowcase = () => {
                     7 styles
                 </MainButton>
             </div>
-            <div className={styles.headline_box}>
-                <MainButton>
-                    Play Sans
-                </MainButton>
-                <h3 className={styles.headline_title}>
-                    Heading
-                </h3>
-            </div>
-            <div className={styles.hubot_sans}>
-                <div className="container">
-                    <div className={`d-flex flex-column flex-md-row align-items-md-center align-items-start gap-3`}>
-                        <MainButton>Hubot Sans</MainButton>
-                        <p className={styles.hubot_text}>Nourish your body, push your limits, and build a stronger, healthier you one workout and meal at a time</p>
-                    </div>
-                </div>
-            </div>
+            <HeadingBox />
+            <HubotSansBox />
             <img className={styles.section_image} src="/assets/typeography.svg" alt="image" />
         </section>
     )

@@ -4,7 +4,7 @@
     border-radius: $border-radius_80;
     position: relative;
 
-    @media(max-width: 678px) {
+    @media(max-width: 767.98px) {
         height: 727px;
         display: flex;
         align-items: center;
@@ -26,12 +26,45 @@
         justify-content: space-around;
         padding: 24px 0;
 
-        @media(max-width: 678px) {
+        @media(max-width: 1199.98px) {
+            >div {
+                transform: scale(.8);
+                flex: 1;
+
+                &:first-of-type {
+                    justify-content: flex-start;
+                }
+
+                &:nth-of-type(2) {
+                    justify-content: center;
+                }
+
+                &:nth-of-type(3) {
+                    justify-content: flex-end;
+                }
+            }
+        }
+
+        @media(max-width: 991.98px) {
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 0 20px;
+
+            >div {
+                transform: scale(1);
+            }
+        }
+
+        @media(max-width: 767.98px) {
             flex-direction: column;
             gap: 60px;
             left: 0;
             top: 0;
-            transform: translateY(33px);
+            transform: translateY(0);
+            padding: 42px 0 24px;
+            >div {
+                align-items: center;
+            }
         }
 
         .semicircle {
@@ -44,11 +77,14 @@
             transform: rotate(-45deg) translateY(64px);
             background-color: $color-background-primary-dark;
 
-            @media(max-width: 678px) {
+            @media(max-width: 991.98px) {
                 width: 196px;
                 height: 98px;
                 border-bottom-right-radius: 98px;
                 border-bottom-left-radius: 98px;
+            }
+
+            @media(max-width: 767.98px) {
                 transform: rotate(-45deg) translateY(0);
             }
         }
@@ -59,7 +95,7 @@
             height: 210px;
             transform: rotate(45deg);
 
-            @media(max-width: 678px) {
+            @media(max-width: 991.98px) {
                 width: 133px;
                 height: 133px;
             }
@@ -71,9 +107,9 @@
             height: 76px;
             position: relative;
 
-            @media(max-width: 678px) {
-                width: 43px;
-                height: 170px;
+            @media(max-width: 991.98px) {
+                width: 170px;
+                height: 43px;
             }
 
             &::after {
@@ -86,9 +122,9 @@
                 width: 75px;
                 height: 295px;
 
-                @media(max-width: 678px) {
-                    width: 170px;
-                    height: 43px;
+                @media(max-width: 991.98px) {
+                    width: 43px;
+                    height: 170px;
                 }
             }
         }

@@ -4,7 +4,7 @@
     padding-top: 223px;
     position: relative;
 
-    @media(max-width: 767px) {
+    @media(max-width: 767.98px) {
         padding-top: 117px;
         border-radius: 30px;
     }
@@ -15,7 +15,11 @@
         padding: 107px 112px 40px 82px;
         transform: translateY(100px);
 
-        @media(max-width: 767px) {
+        @media(max-width: 1199.98px) {
+            padding: 60px 42px 40px 42px;
+        }
+
+        @media(max-width: 767.98px) {
             border-radius: 30px;
             padding: 37px 28px 74px 20px;
             transform: translateY(50px);
@@ -27,7 +31,19 @@
             font-weight: 900;
             letter-spacing: -12.52px;
 
-            @media(max-width: 767px) {
+            @media(max-width: 1399.98px) {
+                font-size: 250px;
+            }
+
+            @media(max-width: 1199.98px) {
+                font-size: 200px;
+            }
+
+            @media(max-width: 991.98px) {
+                font-size: 180px;
+            }
+
+            @media(max-width: 767.98px) {
                 font-size: 79px;
                 letter-spacing: -3.16px;
                 margin-top: 45px;
@@ -37,12 +53,16 @@
 
     .hubot_sans {
         background-color: $color-primary;
-        padding: 166px 0 66px;
+        padding: 166px 40px 66px 82px;
         border-radius: 0 0 $border-radius_70 $border-radius_70;
         z-index: -1;
         position: relative;
 
-        @media(max-width: 767px) {
+        @media(max-width: 1199.98px) {
+            padding: 166px 40px 66px 42px;
+        }
+
+        @media(max-width: 767.98px) {
             padding: 76px 33px 121px 24px;
             border-radius: 0 0 30px 30px;
         }
@@ -55,8 +75,14 @@
             font-weight: 400;
             margin-bottom: 0;
 
-            @media(max-width: 767px) {
+            @media(max-width: 991.98px) {
+                font-size: 16px;
+            }
+
+            @media(max-width: 767.98px) {
                 font-size: 14px;
+                margin-top: 16px;
+                margin-left: 0;
             }
 
         }
@@ -67,7 +93,22 @@
         bottom: -107px;
         right: 90px;
 
-        @media(max-width: 767px) {
+        @media(max-width: 1399.98px) {
+            right: 40px;
+        }
+
+        @media(max-width: 1199.98px) {
+            width: 200px;
+            bottom: 160px;
+            // right: 4px;
+        }
+
+        @media(max-width: 991.98px) {
+            width: 150px;
+            right: 30px;
+        }
+
+        @media(max-width: 767.98px) {
             width: 100px;
             bottom: 240px;
             right: 4px;

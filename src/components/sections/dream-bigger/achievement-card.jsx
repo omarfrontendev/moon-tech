@@ -18,7 +18,7 @@ const AchievementCard = ({ count, label, src, className = "" }) => {
   }
 
   if (hasImage && !label) {
-    return <img src={src} alt="image" />;
+    return <img src={src} className={`h-100 ${styles.image}`} alt="image" />;
   }
 
   return (

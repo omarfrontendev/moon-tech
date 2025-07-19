@@ -4,7 +4,7 @@
     border-radius: $border-radius_80;
     padding: 84px 40px;
 
-    @media(max-width: 767px) {
+    @media(max-width: 767.98px) {
         border-radius: 30px;
         padding: 70px 32px;
     }
@@ -29,7 +29,7 @@
         text-decoration: underline;
     }
 
-    @media(max-width: 767px) {
+    @media(max-width: 767.98px) {
         .text {
             font-size: 12px;
         }

@@ -1,11 +1,19 @@
 .list {
     flex: 1;
 
-    @media(max-width: 767px) {
+    @media(max-width: 1300px) {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    @media(max-width: 767.98px) {
         transform: translateX(-39px);
         width: calc(100% + 37px);
         padding: 0 8px;
-        margin-top: 68px;
+        margin-top: 50px;
+        flex-wrap: nowrap;
+        gap: 0;
+        justify-content: flex-start !important;
     }
 
     .color_card {
@@ -17,13 +25,32 @@
         justify-content: center;
         padding-left: 34px;
         color: $color_black;
+        max-width: 232px;
 
-        @media(max-width: 767px) {
+        @media(max-width: 1300px) {
+
+            // transform: translate(0) !important;
+            &:nth-of-type(2) {
+                transform: translate(0) !important;
+            }
+
+            &:nth-of-type(1) {
+                transform: translateX(30px) !important;
+            }
+
+            flex-basis: calc(50% - 8px);
+            height: auto;
+            border-radius: 40px;
+            // padding: 20px;
+            // max-width: 200px;
+        }
+
+        @media(max-width: 767.98px) {
             height: 164px;
-            padding-left: 13px;
+            padding: 0 0 0 13px;
             border-radius: 90px;
-            // flex: auto;
-            // width: 95px;
+            flex-basis: 25%;
+            max-width: 94px;
         }
 
         &:not(:first-of-type) {
@@ -45,18 +72,18 @@
             z-index: -1;
         }
 
-        @media(max-width: 767px) {
+        @media(max-width: 767.98px) {
 
             &:nth-of-type(3) {
-                transform: translateX(13px);
+                transform: translateX(13px) !important;
             }
 
             &:nth-of-type(2) {
-                transform: translateX(26px);
+                transform: translateX(26px) !important;
             }
 
             &:nth-of-type(1) {
-                transform: translateX(39px);
+                transform: translateX(39px) !important;
             }
         }
 
@@ -65,7 +92,15 @@
             font-size: 24px;
             margin-bottom: 4px;
 
-            @media(max-width: 767px) {
+            @media(max-width: 1199.98px) {
+                font-size: 20px;
+            }
+
+            @media(max-width: 991.98px) {
+                font-size: 16px;
+            }
+
+            @media(max-width: 767.98px) {
                 font-size: 10px;
             }
         }
@@ -73,7 +108,15 @@
         .color_code {
             font-size: 20px;
 
-            @media(max-width: 767px) {
+            @media(max-width: 1199.98px) {
+                font-size: 16px;
+            }
+
+            @media(max-width: 991.98px) {
+                font-size: 12px;
+            }
+
+            @media(max-width: 767.98px) {
                 font-size: 8.19px;
             }
         }
