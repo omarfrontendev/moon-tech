@@ -4,17 +4,23 @@ import Image from 'next/image';
 import MainButton from '@/components/ui/main-badge';
 import { MaskIcon, SupportIcon } from '@/icons';
 import useIsMobile from '@/hooks/useIsMobile';
+import { useGSAP } from '@gsap/react';
+import { animation } from './animations';
 
 const FitFuelSection = () => {
 
     const islaptop = useIsMobile(1199);
     const isMobile = useIsMobile();
 
+    useGSAP(() => {
+        isMobile !== null && animation();
+    }, [isMobile]);
+
     if (isMobile === null) return null;
 
     return (
-        <section className={`${styles.section} d-flex flex-column-reverse flex-xl-row align-items-start align-items-xl-center justify-content-between gap-3`}>
-            <div className={styles.image}>
+        <section id='fit-guide-section' className={`${styles.section} d-flex flex-column-reverse flex-xl-row align-items-start align-items-xl-center justify-content-between gap-3`}>
+            <div className={styles.image} id="fit-guide-image">
                 <Image
                     src="/assets/fit-fuel.svg"
                     alt="image"
@@ -25,10 +31,10 @@ const FitFuelSection = () => {
                     style={{ width: "fit-content", height: "auto" }}
                 />
             </div>
-            <div className={`${styles.title} d-flex flex-column align-items-xl-center`}>
+            <div id="fit-guide-text" className={`${styles.title} d-flex flex-column align-items-xl-center`}>
                 <div className='d-flex'>
                     <SectionTitle
-                        titleStyles={{ fontSize: isMobile ? "68px" : islaptop ? "64px" :  "74px", fontWeight: "700", color: "#CFCFCF" }}
+                        titleStyles={{ fontSize: isMobile ? "68px" : islaptop ? "64px" : "74px", fontWeight: "700", color: "#CFCFCF" }}
                         subtitleStyles={{ fontSize: isMobile ? "14px" : islaptop ? "18px" : "20.5px", fontWeight: "400x" }}
                         title="Fit &<br /> Fuelled"
                         subtitle="Your ultimate fitness and nutrition <br />companion. Track, train, and transform <br />with expert guidance every step"

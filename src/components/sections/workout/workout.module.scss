@@ -9,11 +9,16 @@
 .image_box {
     max-width: calc(100% - 50px);
 }
+
 .image {
     height: auto;
 }
 
 @media(max-width: 767.98px) {
+    .image_box {
+        max-width: none;
+    }
+
     .image {
         height: auto;
     }

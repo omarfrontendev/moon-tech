@@ -7,7 +7,7 @@ const AchievementCard = ({ count, label, src, className = "" }) => {
 
   if (hasCount) {
     return (
-      <div className={`${styles.card} ${className} d-flex align-items-end justify-content-between`}>
+      <div id="card" className={`${styles.card} ${className} d-flex align-items-end justify-content-between`}>
         <div>
           <span className={styles.count}>{count}</span>
           <p className={styles.count_label}>{label}</p>
@@ -18,11 +18,11 @@ const AchievementCard = ({ count, label, src, className = "" }) => {
   }
 
   if (hasImage && !label) {
-    return <img src={src} className={`h-100 ${styles.image}`} alt="image" />;
+    return <img id="card" src={src} className={`h-100 ${styles.image}`} alt="image" />;
   }
 
   return (
-    <div className={`${styles.card}`}>
+    <div id="card" className={`${styles.card}`}>
       {label && (
         <p className="text-center" dangerouslySetInnerHTML={{ __html: label }} />
       )}

@@ -6,6 +6,7 @@
     width: 100%;
     padding: 0 96px;
     max-width: 1640px;
+    z-index: 100;
 
     .header_btn {
         background-color: $color-background-primary-dark;
@@ -14,22 +15,7 @@
         padding: 12px 20px 12px 12px;
         border-radius: $border-radius_70;
         gap: 10px;
-
-        &,
-        svg path {
-            transition: .3s ease-in-out;
-        }
-
-        &:hover {
-            background-color: $color-white;
-            color: $color-background-primary-dark;
-
-            svg {
-                path {
-                    fill: $color-background-primary-dark;
-                }
-            }
-        }
+        position: relative;
     }
 
     .logo {

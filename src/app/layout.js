@@ -18,7 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={dmSans.variable} data-gramm="false">
+      <body className={dmSans.variable}>
         {children}
       </body>
     </html>

@@ -50,7 +50,7 @@ const AchievementsList = () => {
     return (
         <div className="row g-3">
             {achievementsList.map((achievement, i) => (
-                <div className={`${achievement.col}`} key={i}>
+                <div className={`${achievement.col}`} id="achievements-row" key={i}>
                     <AchievementCard {...achievement} />
                 </div>
             ))}

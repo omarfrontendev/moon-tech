@@ -6,8 +6,8 @@ const getLetterSpacing = (fontSize) => {
     return `${size * -0.04}px`;
 };
 
-const SectionTitle = ({ title, subtitle, classes, titleStyles, subtitleStyles }) => (
-    <div className={classes}>
+const SectionTitle = ({ title, subtitle, classes, titleStyles, subtitleStyles, id }) => (
+    <div className={classes} id={id}>
         <h2
             style={{
                 ...titleStyles,

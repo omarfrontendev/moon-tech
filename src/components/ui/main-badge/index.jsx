@@ -1,7 +1,7 @@
 import styles  from './badge.module.scss';
 
-const MainButton = ({ children }) => (
-    <div className={styles.badge}>{children}</div>
+const MainButton = ({ children, id }) => (
+    <div className={styles.badge} id={id}>{children}</div>
 );
 
 export default MainButton;

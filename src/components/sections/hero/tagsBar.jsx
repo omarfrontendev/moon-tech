@@ -22,10 +22,10 @@ const TagsBar = () => {
     ]
 
     return (
-        <div className={styles.tags_list}>{
+        <div className={styles.tags_list} id="tags-list">{
             tags.map((tag, i) => {
-                if (tag.icon) return <IoHeartSharp className={styles.heart_icon} key={i} color="#EBFF00" size={100} />
-                return <button className={styles.tag_btn} key={i}>{tag.label}</button>
+                if (tag.icon) return <IoHeartSharp className={`${styles.heart_icon} tag`} key={i} color="#EBFF00" size={100} />
+                return <button className={`${styles.tag_btn} tag`} key={i}>{tag.label}</button>
             })
         }</div>
     );
