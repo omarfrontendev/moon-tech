@@ -13,6 +13,7 @@ export const animation = () => {
         trigger: "#get-your-fit-section",
         start: "top 100%",
         toggleActions: "restart",
+        once: true,
         onEnter: () => {
             gsap.fromTo(
                 "#get-fit-text",

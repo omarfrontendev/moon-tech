@@ -13,6 +13,7 @@ export const animation = () => {
         trigger: "#fit-guide-section",
         start: "top 100%",
         toggleActions: "restart",
+        once: true,
         onEnter: () => {
             gsap.fromTo(
                 ["#fit-guide-text"],

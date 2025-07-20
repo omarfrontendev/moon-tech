@@ -12,6 +12,59 @@
     height: 80px;
     width: fit-content;
     white-space: nowrap;
+    transition: background-color .3s ease-in-out, color .3s ease-in-out;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+    cursor: pointer;
+
+    svg,
+    path {
+        transition: fill .3s ease-in-out, scale .3s ease-in-out;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $color-white;
+        transform: translateX(-110%);
+        transition: .3s ease-in-out;
+        z-index: -1;
+    }
+
+    @keyframes scalePulse {
+
+        0%,
+        100% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.1);
+        }
+    }
+
+    &:hover {
+        color: $color-background-primary-dark;
+
+        &::after {
+            transform: translateX(0);
+        }
+
+        svg {
+            animation: scalePulse 1.5s ease-in-out infinite;
+
+            path {
+                fill: $color-background-primary-dark;
+            }
+        }
+
+
+    }
 
     @media(max-width: 991.98px) {
 

@@ -13,6 +13,7 @@ export const animation = () => {
         trigger: "#typography-title",
         start: "top 100%",
         toggleActions: "restart",
+        once: true,
         onEnter: () => {
             gsap.fromTo(
                 ["#typography-title", "#typography-btns"],
@@ -31,6 +32,7 @@ export const animation = () => {
         trigger: "#headline-box",
         start: "top 100%",
         toggleActions: "restart",
+        once: true,
         onEnter: () => {
 
             gsap.fromTo(

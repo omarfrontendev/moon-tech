@@ -13,6 +13,7 @@ export const animation = () => {
         trigger: "#workout-section",
         start: "top 100%",
         toggleActions: "restart",
+        once: true,
         onEnter: () => {
             gsap.fromTo(
                 ["#workout-title", "#workout-btn"],

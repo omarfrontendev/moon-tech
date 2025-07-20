@@ -16,6 +16,24 @@
         font-size: 24px;
         font-weight: 800;
 
+
+        @keyframes scalePulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.0444);
+            }
+        }
+
+        &:hover {
+            animation: scalePulse 1.5s ease-in-out infinite;
+
+        }
+
         @media(max-width: 1199.98px) {
             font-size: 20px;
             height: 100%;

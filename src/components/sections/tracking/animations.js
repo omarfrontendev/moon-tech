@@ -13,6 +13,7 @@ export const animation = () => {
         trigger: "#tracking-section",
         start: "top 100%",
         toggleActions: "restart",
+        once: true,
         onEnter: () => {
             gsap.fromTo(
                 ["#tracking-title"],

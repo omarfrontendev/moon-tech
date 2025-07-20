@@ -13,6 +13,7 @@ export const animation = () => {
         trigger: "#dream-title",
         start: "top 100%",
         toggleActions: "restart",
+        once: true,
         onEnter: () => {
             gsap.fromTo(
                 ["#dream-title"],
@@ -31,6 +32,7 @@ export const animation = () => {
         trigger: "#achievements-row",
         start: "top 100%",
         toggleActions: "restart",
+        once: true,
         onEnter: () => {
             gsap.fromTo(
                 ["#card"],

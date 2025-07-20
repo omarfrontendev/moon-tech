@@ -42,7 +42,8 @@ export const animation = () => {
     ScrollTrigger.create({
         trigger: "#tags-list",
         start: "top 80%",
-        toggleActions: "restart",
+        // toggleActions: "play",
+        once: true,
         onEnter: () => {
             gsap.fromTo(
                 ".tag",
@@ -56,11 +57,11 @@ export const animation = () => {
                 }
             );
         },
-        onLeaveBack: () => {
-            gsap.to(
-                ".tag",
-                { opacity: 0, y: 180 },
-            );
-        },
+        // onLeaveBack: () => {
+        //     gsap.to(
+        //         ".tag",
+        //         { opacity: 0, y: 180 },
+        //     );
+        // },
     });
 };

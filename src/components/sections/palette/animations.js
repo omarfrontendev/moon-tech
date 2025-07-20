@@ -13,6 +13,7 @@ export const animation = () => {
         trigger: "#pelette-section",
         start: "top 100%",
         toggleActions: "restart",
+        once: true,
         onEnter: () => {
             gsap.fromTo(
                 ["#pelette-title"],

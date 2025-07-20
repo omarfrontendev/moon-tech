@@ -13,6 +13,7 @@ export const animation = () => {
         trigger: "#fit-guid",
         start: "top 100%",
         toggleActions: "restart",
+        once: true,
         onEnter: () => {
             gsap.fromTo(
                 "#fit-guid-title",

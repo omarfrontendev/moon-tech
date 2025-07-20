@@ -14,6 +14,8 @@
         border-radius: $border-radius_80;
         padding: 107px 112px 40px 82px;
         transform: translateY(100px);
+        z-index: 1;
+        position: relative;
 
         @media(max-width: 1199.98px) {
             padding: 60px 42px 40px 42px;
@@ -55,7 +57,6 @@
         background-color: $color-primary;
         padding: 166px 40px 66px 82px;
         border-radius: 0 0 $border-radius_70 $border-radius_70;
-        z-index: -1;
         position: relative;
 
         @media(max-width: 1199.98px) {
@@ -92,6 +93,7 @@
         position: absolute;
         bottom: -107px;
         right: 90px;
+        z-index: 2;
 
         @media(max-width: 1399.98px) {
             right: 40px;
