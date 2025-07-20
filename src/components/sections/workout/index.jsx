@@ -1,3 +1,5 @@
+"use client";
+
 import SectionTitle from "@/components/ui/section-title";
 import MainButton from "@/components/ui/main-badge";
 import styles from './workout.module.scss';

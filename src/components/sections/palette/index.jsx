@@ -1,3 +1,5 @@
+"use client";
+
 import SectionTitle from "@/components/ui/section-title";
 import { AuxiliaryIcon, LeadIcon } from "@/icons";
 import PaletteList from "./palette-list";

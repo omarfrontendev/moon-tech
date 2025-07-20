@@ -1,3 +1,5 @@
+"use client";
+
 import SectionTitle from "@/components/ui/section-title";
 import styles from './guide.module.scss';
 import useIsMobile from "@/hooks/useIsMobile";

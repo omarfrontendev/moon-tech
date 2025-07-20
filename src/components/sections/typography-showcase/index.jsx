@@ -1,3 +1,5 @@
+"use client";
+
 import SectionTitle from "@/components/ui/section-title";
 import { Bolt, FontIcon } from "@/icons";
 import MainButton from "@/components/ui/main-badge";

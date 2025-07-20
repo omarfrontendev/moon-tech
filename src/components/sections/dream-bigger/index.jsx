@@ -1,3 +1,5 @@
+"use client";
+
 import SectionTitle from "@/components/ui/section-title";
 import styles from './dream.module.scss';
 import AchievementsList from "./achievements-list";

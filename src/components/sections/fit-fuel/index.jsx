@@ -1,3 +1,5 @@
+"use client";
+
 import SectionTitle from '@/components/ui/section-title';
 import styles from './fit-fuel.module.scss';
 import Image from 'next/image';
